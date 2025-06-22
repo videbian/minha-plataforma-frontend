@@ -69,6 +69,4 @@ function PartnerDashboard() {
       const response = await axios.post(`${backendUrl}/branding/${partnerId}/qr-code`, {
         data: `https://your-platform.com/onboarding?partnerId=${partnerId}`, // Exemplo de dado para o QR Code
       } );
-      setQrCodeData(response.data);
-    } catch (err) {
-  
+      setQrCo
