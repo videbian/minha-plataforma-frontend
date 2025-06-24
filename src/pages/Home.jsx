@@ -7,9 +7,10 @@ function Home() {
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState(null)
 
-  const backendUrl = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3000'
+  // URL do Backend no Railway - HARDCODED para garantir que funcione
+  const backendUrl = 'https://minha-plataforma-backend-production.up.railway.app'
 
-  useEffect(( ) => {
+  useEffect((  ) => {
     const fetchMetrics = async () => {
       try {
         const response = await axios.get(`${backendUrl}/admin-dashboard/metrics`)
