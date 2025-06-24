@@ -10,7 +10,7 @@ function Home() {
   // URL do Backend no Railway - HARDCODED para garantir que funcione
   const backendUrl = 'https://minha-plataforma-backend-production.up.railway.app'
 
-  useEffect((  ) => {
+  useEffect((   ) => {
     const fetchMetrics = async () => {
       try {
         const response = await axios.get(`${backendUrl}/admin-dashboard/metrics`)
